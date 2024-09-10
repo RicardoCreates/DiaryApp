@@ -1,4 +1,4 @@
 package de.ricardo;
 
-public record Entry() {
+public record Entry(String id, String name, String entry) {
 }
