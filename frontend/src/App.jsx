@@ -5,7 +5,6 @@ function App() {
     const [entries, setEntries] = useState([]);
 
     useEffect(() => {
-        // Fetch-Eintrag mit aktualisierter URL und Datenstruktur
         const fetchEntries = async () => {
             try {
                 const response = await fetch('http://localhost:8080/api/diary');

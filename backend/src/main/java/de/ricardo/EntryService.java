@@ -16,9 +16,15 @@ public class EntryService {
         return entryRepo.findAll();
     }
 
+//    public Entry save(Entry entry) {
+//        Entry NewEntry = new Entry(UUID.randomUUID().toString(), entry.name(), entry.entry());
+//        return entryRepo.save(entry);
+//    }
+
     public Entry save(Entry entry) {
-        Entry NewEntry = new Entry(UUID.randomUUID().toString(), entry.name(), entry.entry());
-        return entryRepo.save(entry);
+        Entry newEntry = new Entry(UUID.randomUUID().toString(), entry.name(), entry.entry());
+        return entryRepo.save(newEntry);
     }
+
 
 }
